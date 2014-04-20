@@ -32,3 +32,5 @@ G:\университет\2 курс\ООП\1 семестр\ИДЗ\Konstructor\
 G:\университет\2 курс\ООП\1 семестр\ИДЗ\Konstructor\Konstructor\bin\Debug\PdfSharp.Charting.xml
 G:\университет\2 курс\ООП\1 семестр\ИДЗ\Konstructor\Konstructor\bin\Debug\de\PdfSharp.resources.dll
 G:\университет\2 курс\ООП\1 семестр\ИДЗ\Konstructor\Konstructor\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.exe
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.pdb
