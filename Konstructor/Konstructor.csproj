@@ -61,12 +61,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsAndDS\forClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\forClient.Designer.cs">
+      <DependentUpon>forClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB.Designer.cs">
+      <DependentUpon>DB.cs</DependentUpon>
+    </Compile>
     <Compile Include="DrawShcaf.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\forKomplect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\forKomplect.Designer.cs">
+      <DependentUpon>forKomplect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\forPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\forPost.Designer.cs">
+      <DependentUpon>forPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\forShcaf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\forShcaf.Designer.cs">
+      <DependentUpon>forShcaf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\KursDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KursDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\KursDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KursDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\KursDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KursDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\KursDBDataSetClient.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KursDBDataSetClient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\KursDBDataSetKomplect.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KursDBDataSetKomplect.xsd</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -82,8 +137,26 @@
     <Compile Include="Shcaf\IdElement.cs" />
     <Compile Include="Shcaf\MyPenn.cs" />
     <Compile Include="Shcaf\SizeShcaf.cs" />
+    <EmbeddedResource Include="FormsAndDS\forClient.resx">
+      <DependentUpon>forClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB.resx">
+      <DependentUpon>DB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\forKomplect.resx">
+      <DependentUpon>forKomplect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\forPost.resx">
+      <DependentUpon>forPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\forShcaf.resx">
+      <DependentUpon>forShcaf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +167,62 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
+    <None Include="FormsAndDS\KursDBDataSet.xsc">
+      <DependentUpon>KursDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KursDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet.xss">
+      <DependentUpon>KursDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet1.xsc">
+      <DependentUpon>KursDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KursDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet1.xss">
+      <DependentUpon>KursDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet2.xsc">
+      <DependentUpon>KursDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KursDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSet2.xss">
+      <DependentUpon>KursDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSetClient.xsc">
+      <DependentUpon>KursDBDataSetClient.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSetClient.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KursDBDataSetClient.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSetClient.xss">
+      <DependentUpon>KursDBDataSetClient.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSetKomplect.xsc">
+      <DependentUpon>KursDBDataSetKomplect.xsd</DependentUpon>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSetKomplect.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KursDBDataSetKomplect.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FormsAndDS\KursDBDataSetKomplect.xss">
+      <DependentUpon>KursDBDataSetKomplect.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

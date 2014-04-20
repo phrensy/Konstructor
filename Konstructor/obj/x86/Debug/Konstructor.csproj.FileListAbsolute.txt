@@ -34,3 +34,22 @@ G:\университет\2 курс\ООП\1 семестр\ИДЗ\Konstructor\
 G:\университет\2 курс\ООП\1 семестр\ИДЗ\Konstructor\Konstructor\bin\Debug\de\PdfSharp.Charting.resources.dll
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.exe
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.pdb
+D:\Kurs\Konstructor\Konstructor\bin\Debug\Konstructor.exe
+D:\Kurs\Konstructor\Konstructor\bin\Debug\Konstructor.pdb
+D:\Kurs\Konstructor\Konstructor\bin\Debug\PdfSharp.Charting.dll
+D:\Kurs\Konstructor\Konstructor\bin\Debug\PdfSharp.dll
+D:\Kurs\Konstructor\Konstructor\bin\Debug\PdfSharp.xml
+D:\Kurs\Konstructor\Konstructor\bin\Debug\PdfSharp.Charting.xml
+D:\Kurs\Konstructor\Konstructor\bin\Debug\de\PdfSharp.resources.dll
+D:\Kurs\Konstructor\Konstructor\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csprojResolveAssemblyReference.cache
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.Form1.resources
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.MainForm.resources
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.Properties.Resources.resources
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csproj.GenerateResource.Cache
+D:\Kurs\Konstructor\Konstructor\bin\Debug\Konstructor.exe.config
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.DB.resources
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.forClient.resources
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.forKomplect.resources
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.forShcaf.resources
+D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.forPost.resources

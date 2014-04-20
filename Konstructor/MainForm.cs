@@ -15,5 +15,17 @@ namespace Konstructor
         {
             InitializeComponent();
         }
+
+        private void bKonstructor_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.ShowDialog();
+        }
+
+        private void bDB_Click(object sender, EventArgs e)
+        {
+            DB d = new DB();
+            d.ShowDialog();
+        }
     }
 }
