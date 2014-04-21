@@ -30,5 +30,27 @@ namespace Konstructor
             else
                 komplectBindingSource.CancelEdit();
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            try { Convert.ToInt32(textBox3.Text); }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            try { Convert.ToInt32(textBox2.Text); }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+
     }
 }

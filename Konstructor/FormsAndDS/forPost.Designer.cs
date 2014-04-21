@@ -32,14 +32,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.kursDBDataSet = new Konstructor.FormsAndDS.KursDBDataSet();
             this.postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kursDBDataSet = new Konstructor.FormsAndDS.KursDBDataSet();
             this.postavshikTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetTableAdapters.PostavshikTableAdapter();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -70,15 +70,15 @@
             this.textBox1.Size = new System.Drawing.Size(155, 20);
             this.textBox1.TabIndex = 2;
             // 
-            // kursDBDataSet
-            // 
-            this.kursDBDataSet.DataSetName = "KursDBDataSet";
-            this.kursDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // postavshikBindingSource
             // 
             this.postavshikBindingSource.DataMember = "Postavshik";
             this.postavshikBindingSource.DataSource = this.kursDBDataSet;
+            // 
+            // kursDBDataSet
+            // 
+            this.kursDBDataSet.DataSetName = "KursDBDataSet";
+            this.kursDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // postavshikTableAdapter
             // 
@@ -107,6 +107,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(155, 20);
             this.textBox4.TabIndex = 5;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // forPost
             // 
@@ -127,8 +128,8 @@
             this.Text = "forPost";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.forPost_FormClosing);
             this.Load += new System.EventHandler(this.forPost_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

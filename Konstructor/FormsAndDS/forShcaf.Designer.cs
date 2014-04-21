@@ -32,12 +32,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.kursDBDataSet1 = new Konstructor.FormsAndDS.KursDBDataSet1();
             this.shcafBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kursDBDataSet1 = new Konstructor.FormsAndDS.KursDBDataSet1();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.shcafTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet1TableAdapters.ShcafTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -67,6 +67,17 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(164, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // shcafBindingSource
+            // 
+            this.shcafBindingSource.DataMember = "Shcaf";
+            this.shcafBindingSource.DataSource = this.kursDBDataSet1;
+            // 
+            // kursDBDataSet1
+            // 
+            this.kursDBDataSet1.DataSetName = "KursDBDataSet1";
+            this.kursDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -75,16 +86,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(164, 20);
             this.textBox2.TabIndex = 3;
-            // 
-            // kursDBDataSet1
-            // 
-            this.kursDBDataSet1.DataSetName = "KursDBDataSet1";
-            this.kursDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // shcafBindingSource
-            // 
-            this.shcafBindingSource.DataMember = "Shcaf";
-            this.shcafBindingSource.DataSource = this.kursDBDataSet1;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // shcafTableAdapter
             // 
@@ -107,8 +109,8 @@
             this.Text = "forShcaf";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.forShcaf_FormClosing);
             this.Load += new System.EventHandler(this.forShcaf_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

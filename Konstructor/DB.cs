@@ -45,11 +45,11 @@ namespace Konstructor
             }
             if (nPage == 1)
             {
-                forKomplect f2 = new forKomplect();
+                forKomplect f0 = new forKomplect();
                 komplectBindingSource.AddNew();
-                f2.komplectBindingSource.DataSource = komplectBindingSource;
-                f2.komplectBindingSource.Position = komplectBindingSource.Position;
-                if (f2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                f0.komplectBindingSource.DataSource = komplectBindingSource;
+                f0.komplectBindingSource.Position = komplectBindingSource.Position;
+                if (f0.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                     komplectTableAdapter.Update(this.kursDBDataSetKomplect);
             }
             if (nPage == 2)

@@ -32,14 +32,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.kursDBDataSetKomplect = new Konstructor.FormsAndDS.KursDBDataSetKomplect();
             this.komplectBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kursDBDataSetKomplect = new Konstructor.FormsAndDS.KursDBDataSetKomplect();
             this.komplectTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetKomplectTableAdapters.KomplectTableAdapter();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetKomplect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.komplectBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetKomplect)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -70,15 +70,15 @@
             this.textBox1.Size = new System.Drawing.Size(140, 20);
             this.textBox1.TabIndex = 2;
             // 
-            // kursDBDataSetKomplect
-            // 
-            this.kursDBDataSetKomplect.DataSetName = "KursDBDataSetKomplect";
-            this.kursDBDataSetKomplect.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // komplectBindingSource
             // 
             this.komplectBindingSource.DataMember = "Komplect";
             this.komplectBindingSource.DataSource = this.kursDBDataSetKomplect;
+            // 
+            // kursDBDataSetKomplect
+            // 
+            this.kursDBDataSetKomplect.DataSetName = "KursDBDataSetKomplect";
+            this.kursDBDataSetKomplect.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // komplectTableAdapter
             // 
@@ -91,6 +91,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(140, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -99,6 +100,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(140, 20);
             this.textBox3.TabIndex = 4;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -108,7 +110,7 @@
             this.textBox4.Size = new System.Drawing.Size(140, 20);
             this.textBox4.TabIndex = 5;
             // 
-            // forPost
+            // forKomplect
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,12 +125,12 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "forPost";
-            this.Text = "forPost";
+            this.Name = "forKomplect";
+            this.Text = "Комплектующие";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.forPost_FormClosing);
             this.Load += new System.EventHandler(this.forPost_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetKomplect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.komplectBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetKomplect)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

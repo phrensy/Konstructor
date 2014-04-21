@@ -43,6 +43,11 @@
             this.kursDBDataSet2 = new Konstructor.FormsAndDS.KursDBDataSet2();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeToConstructDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shcafBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kursDBDataSet1 = new Konstructor.FormsAndDS.KursDBDataSet1();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,18 +66,6 @@
             this.materialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.bAdd = new System.Windows.Forms.Button();
-            this.bDel = new System.Windows.Forms.Button();
-            this.bChange = new System.Windows.Forms.Button();
-            this.postavshikTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetTableAdapters.PostavshikTableAdapter();
-            this.prodazaTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet2TableAdapters.ProdazaTableAdapter();
-            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeToConstructDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shcafBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kursDBDataSet1 = new Konstructor.FormsAndDS.KursDBDataSet1();
-            this.shcafTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet1TableAdapters.ShcafTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +74,13 @@
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kursDBDataSetClient = new Konstructor.FormsAndDS.KursDBDataSetClient();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.bAdd = new System.Windows.Forms.Button();
+            this.bDel = new System.Windows.Forms.Button();
+            this.bChange = new System.Windows.Forms.Button();
+            this.postavshikTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetTableAdapters.PostavshikTableAdapter();
+            this.prodazaTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet2TableAdapters.ProdazaTableAdapter();
+            this.shcafTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet1TableAdapters.ShcafTableAdapter();
             this.clientTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetClientTableAdapters.ClientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetKomplect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.komplectBindingSource)).BeginInit();
@@ -90,6 +90,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet2)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
@@ -98,11 +100,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetClient)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // kursDBDataSetKomplect
@@ -125,7 +125,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(895, 242);
+            this.tabPage5.Size = new System.Drawing.Size(651, 225);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Журнал продаж";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -200,7 +200,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(895, 242);
+            this.tabPage4.Size = new System.Drawing.Size(651, 225);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Шкаф";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -222,13 +222,44 @@
             this.dataGridView4.Size = new System.Drawing.Size(345, 114);
             this.dataGridView4.TabIndex = 0;
             // 
+            // idDataGridViewTextBoxColumn3
+            // 
+            this.idDataGridViewTextBoxColumn3.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn3.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn3.Name = "idDataGridViewTextBoxColumn3";
+            this.idDataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // priceDataGridViewTextBoxColumn1
+            // 
+            this.priceDataGridViewTextBoxColumn1.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn1.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
+            this.priceDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // timeToConstructDataGridViewTextBoxColumn
+            // 
+            this.timeToConstructDataGridViewTextBoxColumn.DataPropertyName = "TimeToConstruct";
+            this.timeToConstructDataGridViewTextBoxColumn.HeaderText = "TimeToConstruct";
+            this.timeToConstructDataGridViewTextBoxColumn.Name = "timeToConstructDataGridViewTextBoxColumn";
+            this.timeToConstructDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // shcafBindingSource
+            // 
+            this.shcafBindingSource.DataMember = "Shcaf";
+            this.shcafBindingSource.DataSource = this.kursDBDataSet1;
+            // 
+            // kursDBDataSet1
+            // 
+            this.kursDBDataSet1.DataSetName = "KursDBDataSet1";
+            this.kursDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(895, 242);
+            this.tabPage3.Size = new System.Drawing.Size(651, 225);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Поставщик";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -246,7 +277,7 @@
             this.phoneDataGridViewTextBoxColumn1,
             this.daysToDelDataGridViewTextBoxColumn});
             this.dataGridView3.DataSource = this.postavshikBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView3.Location = new System.Drawing.Point(-4, 0);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.Size = new System.Drawing.Size(544, 159);
@@ -303,7 +334,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(895, 242);
+            this.tabPage2.Size = new System.Drawing.Size(651, 225);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Комплектующие";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -313,6 +344,7 @@
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn1,
@@ -321,10 +353,10 @@
             this.priceDataGridViewTextBoxColumn,
             this.materialDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.komplectBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(-4, -4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(543, 154);
+            this.dataGridView2.Size = new System.Drawing.Size(543, 226);
             this.dataGridView2.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn1
@@ -368,7 +400,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(895, 242);
+            this.tabPage1.Size = new System.Drawing.Size(651, 225);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Клиент";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -391,95 +423,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(-4, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(646, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 229);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(903, 268);
-            this.tabControl1.TabIndex = 0;
-            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
-            // 
-            // bAdd
-            // 
-            this.bAdd.Location = new System.Drawing.Point(25, 291);
-            this.bAdd.Name = "bAdd";
-            this.bAdd.Size = new System.Drawing.Size(109, 39);
-            this.bAdd.TabIndex = 1;
-            this.bAdd.Text = "Добавление";
-            this.bAdd.UseVisualStyleBackColor = true;
-            this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
-            // 
-            // bDel
-            // 
-            this.bDel.Location = new System.Drawing.Point(189, 291);
-            this.bDel.Name = "bDel";
-            this.bDel.Size = new System.Drawing.Size(109, 39);
-            this.bDel.TabIndex = 2;
-            this.bDel.Text = "Удаление";
-            this.bDel.UseVisualStyleBackColor = true;
-            this.bDel.Click += new System.EventHandler(this.bDel_Click);
-            // 
-            // bChange
-            // 
-            this.bChange.Location = new System.Drawing.Point(344, 291);
-            this.bChange.Name = "bChange";
-            this.bChange.Size = new System.Drawing.Size(109, 39);
-            this.bChange.TabIndex = 3;
-            this.bChange.Text = "Редактирование";
-            this.bChange.UseVisualStyleBackColor = true;
-            this.bChange.Click += new System.EventHandler(this.bChange_Click);
-            // 
-            // postavshikTableAdapter
-            // 
-            this.postavshikTableAdapter.ClearBeforeFill = true;
-            // 
-            // prodazaTableAdapter
-            // 
-            this.prodazaTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn3
-            // 
-            this.idDataGridViewTextBoxColumn3.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn3.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn3.Name = "idDataGridViewTextBoxColumn3";
-            this.idDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // priceDataGridViewTextBoxColumn1
-            // 
-            this.priceDataGridViewTextBoxColumn1.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn1.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
-            this.priceDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // timeToConstructDataGridViewTextBoxColumn
-            // 
-            this.timeToConstructDataGridViewTextBoxColumn.DataPropertyName = "TimeToConstruct";
-            this.timeToConstructDataGridViewTextBoxColumn.HeaderText = "TimeToConstruct";
-            this.timeToConstructDataGridViewTextBoxColumn.Name = "timeToConstructDataGridViewTextBoxColumn";
-            this.timeToConstructDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // shcafBindingSource
-            // 
-            this.shcafBindingSource.DataMember = "Shcaf";
-            this.shcafBindingSource.DataSource = this.kursDBDataSet1;
-            // 
-            // kursDBDataSet1
-            // 
-            this.kursDBDataSet1.DataSetName = "KursDBDataSet1";
-            this.kursDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // shcafTableAdapter
-            // 
-            this.shcafTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -533,6 +478,65 @@
             this.kursDBDataSetClient.DataSetName = "KursDBDataSetClient";
             this.kursDBDataSetClient.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(659, 251);
+            this.tabControl1.TabIndex = 0;
+            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
+            // 
+            // bAdd
+            // 
+            this.bAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bAdd.Location = new System.Drawing.Point(41, 279);
+            this.bAdd.Name = "bAdd";
+            this.bAdd.Size = new System.Drawing.Size(109, 39);
+            this.bAdd.TabIndex = 1;
+            this.bAdd.Text = "Добавление";
+            this.bAdd.UseVisualStyleBackColor = true;
+            this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
+            // 
+            // bDel
+            // 
+            this.bDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bDel.Location = new System.Drawing.Point(264, 279);
+            this.bDel.Name = "bDel";
+            this.bDel.Size = new System.Drawing.Size(109, 39);
+            this.bDel.TabIndex = 2;
+            this.bDel.Text = "Удаление";
+            this.bDel.UseVisualStyleBackColor = true;
+            this.bDel.Click += new System.EventHandler(this.bDel_Click);
+            // 
+            // bChange
+            // 
+            this.bChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bChange.Location = new System.Drawing.Point(468, 279);
+            this.bChange.Name = "bChange";
+            this.bChange.Size = new System.Drawing.Size(145, 39);
+            this.bChange.TabIndex = 3;
+            this.bChange.Text = "Редактирование";
+            this.bChange.UseVisualStyleBackColor = true;
+            this.bChange.Click += new System.EventHandler(this.bChange_Click);
+            // 
+            // postavshikTableAdapter
+            // 
+            this.postavshikTableAdapter.ClearBeforeFill = true;
+            // 
+            // prodazaTableAdapter
+            // 
+            this.prodazaTableAdapter.ClearBeforeFill = true;
+            // 
+            // shcafTableAdapter
+            // 
+            this.shcafTableAdapter.ClearBeforeFill = true;
+            // 
             // clientTableAdapter
             // 
             this.clientTableAdapter.ClearBeforeFill = true;
@@ -541,7 +545,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 353);
+            this.ClientSize = new System.Drawing.Size(644, 329);
             this.Controls.Add(this.bChange);
             this.Controls.Add(this.bDel);
             this.Controls.Add(this.bAdd);
@@ -557,6 +561,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).EndInit();
@@ -565,11 +571,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetClient)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

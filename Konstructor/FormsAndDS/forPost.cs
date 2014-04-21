@@ -30,5 +30,15 @@ namespace Konstructor
             else
                 postavshikBindingSource.CancelEdit();
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            try { Convert.ToInt32(textBox4.Text); }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
     }
 }
