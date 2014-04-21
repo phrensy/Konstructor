@@ -32,9 +32,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.kursDBDataSet = new Konstructor.KursDBDataSet();
+            this.kursDBDataSet = new Konstructor.FormsAndDS.KursDBDataSet();
             this.postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.postavshikTableAdapter = new Konstructor.KursDBDataSetTableAdapters.PostavshikTableAdapter();
+            this.postavshikTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetTableAdapters.PostavshikTableAdapter();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -139,8 +139,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
-        private KursDBDataSet kursDBDataSet;
-        private KursDBDataSetTableAdapters.PostavshikTableAdapter postavshikTableAdapter;
+        private FormsAndDS.KursDBDataSet kursDBDataSet;
+        private FormsAndDS.KursDBDataSetTableAdapters.PostavshikTableAdapter postavshikTableAdapter;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;

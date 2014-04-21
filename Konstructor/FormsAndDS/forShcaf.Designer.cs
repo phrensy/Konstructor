@@ -33,9 +33,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.kursDBDataSet1 = new Konstructor.KursDBDataSet1();
+            this.kursDBDataSet1 = new Konstructor.FormsAndDS.KursDBDataSet1();
             this.shcafBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.shcafTableAdapter = new Konstructor.KursDBDataSet1TableAdapters.ShcafTableAdapter();
+            this.shcafTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet1TableAdapters.ShcafTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -120,8 +120,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private KursDBDataSet1 kursDBDataSet1;
-        private KursDBDataSet1TableAdapters.ShcafTableAdapter shcafTableAdapter;
+        private FormsAndDS.KursDBDataSet1 kursDBDataSet1;
+        private FormsAndDS.KursDBDataSet1TableAdapters.ShcafTableAdapter shcafTableAdapter;
         public System.Windows.Forms.BindingSource shcafBindingSource;
     }
 }

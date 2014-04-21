@@ -32,9 +32,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.kursDBDataSetKomplect = new Konstructor.KursDBDataSetKomplect();
+            this.kursDBDataSetKomplect = new Konstructor.FormsAndDS.KursDBDataSetKomplect();
             this.komplectBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.komplectTableAdapter = new Konstructor.KursDBDataSetKomplectTableAdapters.KomplectTableAdapter();
+            this.komplectTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetKomplectTableAdapters.KomplectTableAdapter();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -139,8 +139,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
-        private KursDBDataSetKomplect kursDBDataSetKomplect;
-        private KursDBDataSetKomplectTableAdapters.KomplectTableAdapter komplectTableAdapter;
+        private FormsAndDS.KursDBDataSetKomplect kursDBDataSetKomplect;
+        private FormsAndDS.KursDBDataSetKomplectTableAdapters.KomplectTableAdapter komplectTableAdapter;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;

@@ -29,12 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kursDBDataSetClient = new Konstructor.KursDBDataSetClient();
-            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientTableAdapter = new Konstructor.KursDBDataSetClientTableAdapters.ClientTableAdapter();
-            this.kursDBDataSetKomplect = new Konstructor.KursDBDataSetKomplect();
+            this.kursDBDataSetKomplect = new Konstructor.FormsAndDS.KursDBDataSetKomplect();
             this.komplectBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.komplectTableAdapter = new Konstructor.KursDBDataSetKomplectTableAdapters.KomplectTableAdapter();
+            this.komplectTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetKomplectTableAdapters.KomplectTableAdapter();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,14 +40,9 @@
             this.dataOfSellDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceOfSellDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prodazaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kursDBDataSet2 = new Konstructor.KursDBDataSet2();
+            this.kursDBDataSet2 = new Konstructor.FormsAndDS.KursDBDataSet2();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeToConstructDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shcafBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kursDBDataSet1 = new Konstructor.KursDBDataSet1();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +51,7 @@
             this.phoneDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.daysToDelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kursDBDataSet = new Konstructor.KursDBDataSet();
+            this.kursDBDataSet = new Konstructor.FormsAndDS.KursDBDataSet();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,21 +61,27 @@
             this.materialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.bAdd = new System.Windows.Forms.Button();
+            this.bDel = new System.Windows.Forms.Button();
+            this.bChange = new System.Windows.Forms.Button();
+            this.postavshikTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetTableAdapters.PostavshikTableAdapter();
+            this.prodazaTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet2TableAdapters.ProdazaTableAdapter();
+            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeToConstructDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shcafBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kursDBDataSet1 = new Konstructor.FormsAndDS.KursDBDataSet1();
+            this.shcafTableAdapter = new Konstructor.FormsAndDS.KursDBDataSet1TableAdapters.ShcafTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.oDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.bAdd = new System.Windows.Forms.Button();
-            this.bDel = new System.Windows.Forms.Button();
-            this.bChange = new System.Windows.Forms.Button();
-            this.postavshikTableAdapter = new Konstructor.KursDBDataSetTableAdapters.PostavshikTableAdapter();
-            this.shcafTableAdapter = new Konstructor.KursDBDataSet1TableAdapters.ShcafTableAdapter();
-            this.prodazaTableAdapter = new Konstructor.KursDBDataSet2TableAdapters.ProdazaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetClient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kursDBDataSetClient = new Konstructor.FormsAndDS.KursDBDataSetClient();
+            this.clientTableAdapter = new Konstructor.FormsAndDS.KursDBDataSetClientTableAdapters.ClientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetKomplect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.komplectBindingSource)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -92,8 +90,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet2)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
@@ -103,21 +99,11 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetClient)).BeginInit();
             this.SuspendLayout();
-            // 
-            // kursDBDataSetClient
-            // 
-            this.kursDBDataSetClient.DataSetName = "KursDBDataSetClient";
-            this.kursDBDataSetClient.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientBindingSource
-            // 
-            this.clientBindingSource.DataMember = "Client";
-            this.clientBindingSource.DataSource = this.kursDBDataSetClient;
-            // 
-            // clientTableAdapter
-            // 
-            this.clientTableAdapter.ClearBeforeFill = true;
             // 
             // kursDBDataSetKomplect
             // 
@@ -235,37 +221,6 @@
             this.dataGridView4.ReadOnly = true;
             this.dataGridView4.Size = new System.Drawing.Size(345, 114);
             this.dataGridView4.TabIndex = 0;
-            // 
-            // idDataGridViewTextBoxColumn3
-            // 
-            this.idDataGridViewTextBoxColumn3.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn3.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn3.Name = "idDataGridViewTextBoxColumn3";
-            this.idDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // priceDataGridViewTextBoxColumn1
-            // 
-            this.priceDataGridViewTextBoxColumn1.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn1.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
-            this.priceDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // timeToConstructDataGridViewTextBoxColumn
-            // 
-            this.timeToConstructDataGridViewTextBoxColumn.DataPropertyName = "TimeToConstruct";
-            this.timeToConstructDataGridViewTextBoxColumn.HeaderText = "TimeToConstruct";
-            this.timeToConstructDataGridViewTextBoxColumn.Name = "timeToConstructDataGridViewTextBoxColumn";
-            this.timeToConstructDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // shcafBindingSource
-            // 
-            this.shcafBindingSource.DataMember = "Shcaf";
-            this.shcafBindingSource.DataSource = this.kursDBDataSet1;
-            // 
-            // kursDBDataSet1
-            // 
-            this.kursDBDataSet1.DataSetName = "KursDBDataSet1";
-            this.kursDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage3
             // 
@@ -439,48 +394,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(646, 192);
             this.dataGridView1.TabIndex = 0;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fDataGridViewTextBoxColumn
-            // 
-            this.fDataGridViewTextBoxColumn.DataPropertyName = "F";
-            this.fDataGridViewTextBoxColumn.HeaderText = "F";
-            this.fDataGridViewTextBoxColumn.Name = "fDataGridViewTextBoxColumn";
-            this.fDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // iDataGridViewTextBoxColumn
-            // 
-            this.iDataGridViewTextBoxColumn.DataPropertyName = "I";
-            this.iDataGridViewTextBoxColumn.HeaderText = "I";
-            this.iDataGridViewTextBoxColumn.Name = "iDataGridViewTextBoxColumn";
-            this.iDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // oDataGridViewTextBoxColumn
-            // 
-            this.oDataGridViewTextBoxColumn.DataPropertyName = "O";
-            this.oDataGridViewTextBoxColumn.HeaderText = "O";
-            this.oDataGridViewTextBoxColumn.Name = "oDataGridViewTextBoxColumn";
-            this.oDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // adressDataGridViewTextBoxColumn
-            // 
-            this.adressDataGridViewTextBoxColumn.DataPropertyName = "Adress";
-            this.adressDataGridViewTextBoxColumn.HeaderText = "Adress";
-            this.adressDataGridViewTextBoxColumn.Name = "adressDataGridViewTextBoxColumn";
-            this.adressDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            this.phoneDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -529,13 +442,100 @@
             // 
             this.postavshikTableAdapter.ClearBeforeFill = true;
             // 
+            // prodazaTableAdapter
+            // 
+            this.prodazaTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn3
+            // 
+            this.idDataGridViewTextBoxColumn3.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn3.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn3.Name = "idDataGridViewTextBoxColumn3";
+            this.idDataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // priceDataGridViewTextBoxColumn1
+            // 
+            this.priceDataGridViewTextBoxColumn1.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn1.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
+            this.priceDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // timeToConstructDataGridViewTextBoxColumn
+            // 
+            this.timeToConstructDataGridViewTextBoxColumn.DataPropertyName = "TimeToConstruct";
+            this.timeToConstructDataGridViewTextBoxColumn.HeaderText = "TimeToConstruct";
+            this.timeToConstructDataGridViewTextBoxColumn.Name = "timeToConstructDataGridViewTextBoxColumn";
+            this.timeToConstructDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // shcafBindingSource
+            // 
+            this.shcafBindingSource.DataMember = "Shcaf";
+            this.shcafBindingSource.DataSource = this.kursDBDataSet1;
+            // 
+            // kursDBDataSet1
+            // 
+            this.kursDBDataSet1.DataSetName = "KursDBDataSet1";
+            this.kursDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // shcafTableAdapter
             // 
             this.shcafTableAdapter.ClearBeforeFill = true;
             // 
-            // prodazaTableAdapter
+            // idDataGridViewTextBoxColumn
             // 
-            this.prodazaTableAdapter.ClearBeforeFill = true;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fDataGridViewTextBoxColumn
+            // 
+            this.fDataGridViewTextBoxColumn.DataPropertyName = "F";
+            this.fDataGridViewTextBoxColumn.HeaderText = "F";
+            this.fDataGridViewTextBoxColumn.Name = "fDataGridViewTextBoxColumn";
+            this.fDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iDataGridViewTextBoxColumn
+            // 
+            this.iDataGridViewTextBoxColumn.DataPropertyName = "I";
+            this.iDataGridViewTextBoxColumn.HeaderText = "I";
+            this.iDataGridViewTextBoxColumn.Name = "iDataGridViewTextBoxColumn";
+            this.iDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // oDataGridViewTextBoxColumn
+            // 
+            this.oDataGridViewTextBoxColumn.DataPropertyName = "O";
+            this.oDataGridViewTextBoxColumn.HeaderText = "O";
+            this.oDataGridViewTextBoxColumn.Name = "oDataGridViewTextBoxColumn";
+            this.oDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // adressDataGridViewTextBoxColumn
+            // 
+            this.adressDataGridViewTextBoxColumn.DataPropertyName = "Adress";
+            this.adressDataGridViewTextBoxColumn.HeaderText = "Adress";
+            this.adressDataGridViewTextBoxColumn.Name = "adressDataGridViewTextBoxColumn";
+            this.adressDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.phoneDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataMember = "Client";
+            this.clientBindingSource.DataSource = this.kursDBDataSetClient;
+            // 
+            // kursDBDataSetClient
+            // 
+            this.kursDBDataSetClient.DataSetName = "KursDBDataSetClient";
+            this.kursDBDataSetClient.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientTableAdapter
+            // 
+            this.clientTableAdapter.ClearBeforeFill = true;
             // 
             // DB
             // 
@@ -549,8 +549,6 @@
             this.Name = "DB";
             this.Text = "DB";
             this.Load += new System.EventHandler(this.DB_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetClient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetKomplect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.komplectBindingSource)).EndInit();
             this.tabPage5.ResumeLayout(false);
@@ -559,8 +557,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).EndInit();
@@ -570,15 +566,19 @@
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.shcafBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kursDBDataSetClient)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private KursDBDataSetKomplect kursDBDataSetKomplect;
+        private FormsAndDS.KursDBDataSetKomplect kursDBDataSetKomplect;
         private System.Windows.Forms.BindingSource komplectBindingSource;
-        private KursDBDataSetKomplectTableAdapters.KomplectTableAdapter komplectTableAdapter;
+        private FormsAndDS.KursDBDataSetKomplectTableAdapters.KomplectTableAdapter komplectTableAdapter;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage3;
@@ -600,34 +600,34 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button bAdd;
         private System.Windows.Forms.Button bDel;
-        public KursDBDataSetClient kursDBDataSetClient;
+        public FormsAndDS.KursDBDataSetClient kursDBDataSetClient;
         public System.Windows.Forms.BindingSource clientBindingSource;
-        public KursDBDataSetClientTableAdapters.ClientTableAdapter clientTableAdapter;
+        public FormsAndDS.KursDBDataSetClientTableAdapters.ClientTableAdapter clientTableAdapter;
         private System.Windows.Forms.Button bChange;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private KursDBDataSet kursDBDataSet;
+        private FormsAndDS.KursDBDataSet kursDBDataSet;
         private System.Windows.Forms.BindingSource postavshikBindingSource;
-        private KursDBDataSetTableAdapters.PostavshikTableAdapter postavshikTableAdapter;
+        private FormsAndDS.KursDBDataSetTableAdapters.PostavshikTableAdapter postavshikTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn adressDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn daysToDelDataGridViewTextBoxColumn;
-        private KursDBDataSet1 kursDBDataSet1;
-        private KursDBDataSet1TableAdapters.ShcafTableAdapter shcafTableAdapter;
+        private FormsAndDS.KursDBDataSet1 kursDBDataSet1;
+        private FormsAndDS.KursDBDataSet1TableAdapters.ShcafTableAdapter shcafTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeToConstructDataGridViewTextBoxColumn;
-        private KursDBDataSet2 kursDBDataSet2;
-        private System.Windows.Forms.BindingSource prodazaBindingSource;
-        private KursDBDataSet2TableAdapters.ProdazaTableAdapter prodazaTableAdapter;
+        private FormsAndDS.KursDBDataSet2 kursDBDataSet2;
+        private FormsAndDS.KursDBDataSet2TableAdapters.ProdazaTableAdapter prodazaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn idShcafaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idClientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataOfSellDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceOfSellDataGridViewTextBoxColumn;
         public System.Windows.Forms.BindingSource shcafBindingSource;
+        public System.Windows.Forms.BindingSource prodazaBindingSource;
     }
 }
