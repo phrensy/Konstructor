@@ -194,9 +194,13 @@ namespace Konstructor.FormsAndDS
 
         public void ListIdPost(int idKompl)
         {
+<<<<<<< HEAD
             string queryString = "";
 
             queryString = "SELECT IdPost FROM SvyazKP WHERE idKomplect='" + idKompl + "'";
+=======
+            string queryString = "SELECT IdPost FROM SvyazKP WHERE idKomplect='" + idKompl + "'";
+>>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

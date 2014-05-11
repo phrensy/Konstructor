@@ -63,3 +63,37 @@ D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forZakupka.
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csproj.ResolveComReference.cache
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.Otchet.resources
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forSvyazKP.resources
+<<<<<<< HEAD
+=======
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\Konstructor.exe.config
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\Konstructor.exe
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\Konstructor.pdb
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\PdfSharp.Charting.dll
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\PdfSharp.dll
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\PdfSharp.xml
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\PdfSharp.Charting.xml
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\de\PdfSharp.resources.dll
+G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\de\PdfSharp.Charting.resources.dll
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csprojResolveAssemblyReference.cache
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csproj.ResolveComReference.cache
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.DB.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.Form1.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.Docs.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.Dogovor.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.email.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forClient.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forKomplect.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forPost.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forProdaza.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forShcaf.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forSvyazKP.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forZakupka.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.Otchet.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.SchetOpl.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.TovarNak.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.MainForm.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.Properties.Resources.resources
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csproj.GenerateResource.Cache
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.exe
+G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.pdb
+>>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73

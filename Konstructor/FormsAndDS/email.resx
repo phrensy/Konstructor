@@ -6013,6 +6013,7 @@
         C2KrBWqwZFzvk9iy8Ms2gpdC/8hlrbc4fRGwr0/2MTaC73/xk/8LMtdbnWMyU2QAAAAASUVORK5CYII=
 </value>
   </data>
+<<<<<<< HEAD
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHIAAAAmCAIAAACXoFjLAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -8006,6 +8007,8 @@
         C2KrBWqwZFzvk9iy8Ms2gpdC/8hlrbc4fRGwr0/2MTaC73/xk/8LMtdbnWMyU2QAAAAASUVORK5CYII=
 </value>
   </data>
+=======
+>>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAe0AAAGKCAIAAACuJ45OAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
