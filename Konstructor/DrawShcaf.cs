@@ -31,6 +31,11 @@ namespace Konstructor
         private int Gup = 0;//для рисования полосок у глубины
         private int Gdown = 0;//для рисования полосок у глубины
 
+        public int countStenka = 0;
+        public int countZadnya = 0;
+        public int countYashik = 0;
+        public int countVeshalka = 0;
+
         private bool TryDraw = true;
 
         Pen myPen = new Pen(Color.Chocolate, 1);
@@ -64,7 +69,7 @@ namespace Konstructor
             Redraw(_baseShcaf);
 
             Razmer(_baseShcaf);
-            //Counting(_baseShcaf);
+            Counting(_baseShcaf);
             Stoimost(_baseShcaf);
 
             //отрисовка размерной сетки
@@ -867,42 +872,58 @@ namespace Konstructor
             return _baseShcaf;
         }
 
-       // private void Counting(BaseShcaf _baseShcaf)
-        //{
-        //    _baseShcaf.CountList.Clear();
-        //    int countST =0;
-        //    int countP = 0;
-        //    int countYA = 0;
-        //    int countVE = 0;
-        //    foreach (var b in _baseShcaf.listE)
-        //    {
-        //        switch (b.Id)
-        //        {
-        //            case IdElement.Stena:
-        //                countST++;
-        //                break;
-        //            case IdElement.Polka:
-        //                countP++;
-        //                break;
-        //            case IdElement.Yschik:
-        //                countYA++;
-        //                break;
-        //            case IdElement.Vesh:
-        //                countVE++;
-        //                break;
-        //        }
-        //    }
-        //    _baseShcaf.CountList.Add(new DrawText(new Point(100,100), Convert.ToString(countST)));
-        //    //_baseShcaf.CountList.Add(new DrawText(new Point(100, 100), Convert.ToString(countP)));
-        //   // _baseShcaf.CountList.Add(new DrawText(new Point(100, 100), Convert.ToString(countYA)));
-        //   // _baseShcaf.CountList.Add(new DrawText(new Point(100, 100), Convert.ToString(countVE)));
-            
-        //}
+        private void Counting(BaseShcaf _baseShcaf)
+        {
+            _baseShcaf.CountList.Clear();
+            MouseEventArgs e = new MouseEventArgs(MouseButtons.Left, 1, _x, _y, 0);
+            foreach (var b in _baseShcaf.listE)
+            {
+                switch (b.Id)
+                {
+                    case IdElement.Zadn:
+                        countZadnya = _baseShcaf.Width / 1000 * _baseShcaf.Height / 1000;
+                        break;
+                    case IdElement.Stena:
+                        countStenka += Convert.ToInt32(_baseShcaf.Depth / 1000 * _baseShcaf.Height / 1000);
+                        break;
+                    case IdElement.Polka:
+                        countStenka += Convert.ToInt32(_baseShcaf.Width / 1000 * _baseShcaf.Depth / 1000);
+                        break;
+                    case IdElement.Yschik:
+                        if (_x <= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                        {
+                            countYashik += Convert.ToInt32(_baseShcaf.Depth / 1000 * Convert.ToInt32(_baseShcaf.ListText[0].SizeText) / 1000);
+                        }
+                        else if (_x >= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                        {
+                            countYashik += Convert.ToInt32(_baseShcaf.Depth / 1000 * Convert.ToInt32(_baseShcaf.ListText[1].SizeText) / 1000);
+                        }
+                        break;
+                    case IdElement.Vesh:
+                        if (_x <= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                        {
+                            countVeshalka += Convert.ToInt32(_baseShcaf.ListText[0].SizeText) / 1000;
+
+                        }
+                        else if (_x >= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                        {
+                            countVeshalka += Convert.ToInt32(_baseShcaf.ListText[1].SizeText) / 1000;
+                        }
+                        break;
+                }
+            }
+            //_baseShcaf.CountList.Add(new DrawText(new Point(100, 100), Convert.ToString(countST)));
+            //_baseShcaf.CountList.Add(new DrawText(new Point(100, 100), Convert.ToString(countP)));
+            // _baseShcaf.CountList.Add(new DrawText(new Point(100, 100), Convert.ToString(countYA)));
+            // _baseShcaf.CountList.Add(new DrawText(new Point(100, 100), Convert.ToString(countVE)));
+
+        }
 
         private void Stoimost(BaseShcaf _baseShcaf)
         {
             _baseShcaf.CountList.Clear();
             double stoim = 0.0;
+            MouseEventArgs e = new MouseEventArgs(MouseButtons.Left, 1, _x, _y, 0);
             foreach (var b in _baseShcaf.listE)
             {
                 switch (b.Id)
@@ -942,11 +963,62 @@ namespace Konstructor
                         }
                         break;
                         
-                        
-                }
+                    
+                        case IdElement.Yschik:
+                            if (pointforStoimost == 0)//mdf
+                            {
+                                if (_x <= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                                {
+                                    stoim += (_baseShcaf.Depth / 1000 * Convert.ToDouble(_baseShcaf.ListText[0].SizeText) / 1000 * 280);
+                                }
+                                else if (_x >= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                                {
+                                    stoim += (_baseShcaf.Depth / 1000 * Convert.ToDouble(_baseShcaf.ListText[1].SizeText) / 1000 * 280);
+                                }
+                            }
+                            else if (pointforStoimost == 1)//dsp
+                            {
+                                if (_x <= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                                {
+                                    stoim += (_baseShcaf.Depth / 1000 * Convert.ToDouble(_baseShcaf.ListText[0].SizeText) / 1000 * 150);
+                                }
+                                else if (_x >= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                                {
+                                    stoim += (_baseShcaf.Depth / 1000 * Convert.ToDouble(_baseShcaf.ListText[1].SizeText) / 1000 * 150);
+                                }
+                            }
+                            else if (pointforStoimost == 2)//dvp
+                            {
+                                if (_x <= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                                {
+                                    stoim += (_baseShcaf.Depth / 1000 * Convert.ToDouble(_baseShcaf.ListText[0].SizeText) / 1000 * 50);
+                                }
+                                else if (_x >= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                                {
+                                    stoim += (_baseShcaf.Depth / 1000 * Convert.ToDouble(_baseShcaf.ListText[1].SizeText) / 1000 * 50);
+                                }
+                            }
+                            break;
+
+                        case IdElement.Vesh:
+                         
+                            if (_x <= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                            {
+                                stoim += Convert.ToDouble(_baseShcaf.ListText[0].SizeText) / 1000 * 154;
+                                
+                            }
+                            else if (_x >= _baseShcaf.listE[_baseShcaf.listE.Count - 2].Rec.X && e.Button == MouseButtons.Left)
+                            {
+                               stoim += Convert.ToDouble(_baseShcaf.ListText[1].SizeText) / 1000 * 154;
+                            }
+                    
+                            break;
+                    }
+                
             }
-            //_baseShcaf.CountList.Add(new DrawText(new Point(_x+w+100, _y+h+50), Convert.ToString(stoim)));
-            _baseShcaf.CountList.Add(new DrawText(new Point(1159,551), Convert.ToString(stoim+"  руб.")));
+                _baseShcaf.CountList.Add(new DrawText(new Point(1159, 551), stoim.ToString("F")));
+                
+         
         
         }
 

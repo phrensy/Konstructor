@@ -13,6 +13,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -34,6 +49,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="cli_basetypes, Version=1.0.20.0, Culture=neutral, PublicKeyToken=ce2cb7e279207b9e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Учеба\ООП\lab3\lab3\Resources\cli_basetypes.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_cppuhelper, Version=1.0.23.0, Culture=neutral, PublicKeyToken=ce2cb7e279207b9e, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Учеба\ООП\lab3\lab3\Resources\cli_cppuhelper.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_oootypes, Version=1.0.9.0, Culture=neutral, PublicKeyToken=ce2cb7e279207b9e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Учеба\ООП\lab3\lab3\Resources\cli_oootypes.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_ure, Version=1.0.23.0, Culture=neutral, PublicKeyToken=ce2cb7e279207b9e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Учеба\ООП\lab3\lab3\Resources\cli_ure.dll</HintPath>
+    </Reference>
+    <Reference Include="cli_uretypes, Version=1.0.9.0, Culture=neutral, PublicKeyToken=ce2cb7e279207b9e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Учеба\ООП\lab3\lab3\Resources\cli_uretypes.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.81.0.1407, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp">
       <HintPath>..\..\..\..\2 семестр\курсовая\библиотеки пдф\itextsharp.dll</HintPath>
     </Reference>
@@ -61,12 +100,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormsAndDS\forClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsAndDS\forClient.Designer.cs">
-      <DependentUpon>forClient.cs</DependentUpon>
-    </Compile>
     <Compile Include="DB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +113,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsAndDS\Docs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\Docs.Designer.cs">
+      <DependentUpon>Docs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\Dogovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\Dogovor.Designer.cs">
+      <DependentUpon>Dogovor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\email.Designer.cs">
+      <DependentUpon>email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\forClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\forClient.Designer.cs">
+      <DependentUpon>forClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsAndDS\forKomplect.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,36 +149,52 @@
     <Compile Include="FormsAndDS\forPost.Designer.cs">
       <DependentUpon>forPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsAndDS\forProdaza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\forProdaza.Designer.cs">
+      <DependentUpon>forProdaza.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsAndDS\forShcaf.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsAndDS\forShcaf.Designer.cs">
       <DependentUpon>forShcaf.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsAndDS\KursDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KursDBDataSet.xsd</DependentUpon>
+    <Compile Include="FormsAndDS\forSvyazKP.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsAndDS\KursDBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KursDBDataSet1.xsd</DependentUpon>
+    <Compile Include="FormsAndDS\forSvyazKP.Designer.cs">
+      <DependentUpon>forSvyazKP.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsAndDS\KursDBDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KursDBDataSet2.xsd</DependentUpon>
+    <Compile Include="FormsAndDS\forZakupka.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsAndDS\KursDBDataSetClient.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KursDBDataSetClient.xsd</DependentUpon>
+    <Compile Include="FormsAndDS\forZakupka.Designer.cs">
+      <DependentUpon>forZakupka.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsAndDS\KursDBDataSetKomplect.Designer.cs">
+    <Compile Include="FormsAndDS\Otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\Otchet.Designer.cs">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\SchetOpl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\SchetOpl.Designer.cs">
+      <DependentUpon>SchetOpl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAndDS\TovarNak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAndDS\TovarNak.Designer.cs">
+      <DependentUpon>TovarNak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KBD_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>KursDBDataSetKomplect.xsd</DependentUpon>
+      <DependentUpon>KBD_DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -129,6 +202,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OO\ODT.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shcaf\BaseShcaf.cs" />
@@ -137,14 +211,23 @@
     <Compile Include="Shcaf\IdElement.cs" />
     <Compile Include="Shcaf\MyPenn.cs" />
     <Compile Include="Shcaf\SizeShcaf.cs" />
-    <EmbeddedResource Include="FormsAndDS\forClient.resx">
-      <DependentUpon>forClient.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DB.resx">
       <DependentUpon>DB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\Docs.resx">
+      <DependentUpon>Docs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\Dogovor.resx">
+      <DependentUpon>Dogovor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\email.resx">
+      <DependentUpon>email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\forClient.resx">
+      <DependentUpon>forClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsAndDS\forKomplect.resx">
       <DependentUpon>forKomplect.cs</DependentUpon>
@@ -152,8 +235,26 @@
     <EmbeddedResource Include="FormsAndDS\forPost.resx">
       <DependentUpon>forPost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\forProdaza.resx">
+      <DependentUpon>forProdaza.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsAndDS\forShcaf.resx">
       <DependentUpon>forShcaf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\forSvyazKP.resx">
+      <DependentUpon>forSvyazKP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\forZakupka.resx">
+      <DependentUpon>forZakupka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\Otchet.resx">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\SchetOpl.resx">
+      <DependentUpon>SchetOpl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAndDS\TovarNak.resx">
+      <DependentUpon>TovarNak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -168,65 +269,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
-    <None Include="FormsAndDS\KursDBDataSet.xsc">
-      <DependentUpon>KursDBDataSet.xsd</DependentUpon>
+    <None Include="KBD_DataSet.xsc">
+      <DependentUpon>KBD_DataSet.xsd</DependentUpon>
     </None>
-    <None Include="FormsAndDS\KursDBDataSet.xsd">
+    <None Include="KBD_DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KursDBDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>KBD_DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="FormsAndDS\KursDBDataSet.xss">
-      <DependentUpon>KursDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSet1.xsc">
-      <DependentUpon>KursDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KursDBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSet1.xss">
-      <DependentUpon>KursDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSet2.xsc">
-      <DependentUpon>KursDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KursDBDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSet2.xss">
-      <DependentUpon>KursDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSetClient.xsc">
-      <DependentUpon>KursDBDataSetClient.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSetClient.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KursDBDataSetClient.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSetClient.xss">
-      <DependentUpon>KursDBDataSetClient.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSetKomplect.xsc">
-      <DependentUpon>KursDBDataSetKomplect.xsd</DependentUpon>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSetKomplect.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KursDBDataSetKomplect.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FormsAndDS\KursDBDataSetKomplect.xss">
-      <DependentUpon>KursDBDataSetKomplect.xsd</DependentUpon>
+    <None Include="KBD_DataSet.xss">
+      <DependentUpon>KBD_DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -239,6 +295,57 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Docs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 с пакетом обновления 1 %28SP1%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

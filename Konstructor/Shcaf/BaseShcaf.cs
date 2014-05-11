@@ -24,7 +24,7 @@ namespace Konstructor.Shcaf
 
         public List<DrawText> CountList;
 
-        public BaseShcaf(int width, int height,double depth)
+        public BaseShcaf(int width, int height,int depth)
         {
             Width = width;
             Height = height;
