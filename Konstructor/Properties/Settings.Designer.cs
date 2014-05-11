@@ -33,5 +33,16 @@ namespace Konstructor.Properties {
                 return ((string)(this["KursDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\KBD.mdf;Integrated S" +
+            "ecurity=True;Connect Timeout=30")]
+        public string KBDConnectionString {
+            get {
+                return ((string)(this["KBDConnectionString"]));
+            }
+        }
     }
 }

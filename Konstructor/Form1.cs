@@ -44,6 +44,11 @@ namespace Konstructor
             _shcaf.Depth = (int)DepthValue.Value;
             _shcaf.listE.Clear();
             _shcaf.listS.Clear();
+            _shcaf.CountList.Clear();
+            _drawshcaf.countStenka = 0;
+            _drawshcaf.countVeshalka = 0;
+            _drawshcaf.countYashik = 0;
+            _drawshcaf.countZadnya = 0;
             _shcaf.ListText.Clear();
             _drawshcaf.wp = pictureBox1.Width;
             _drawshcaf.hp = pictureBox1.Height;
@@ -209,11 +214,20 @@ namespace Konstructor
             pictureBox1.Refresh();
         }
 
-        private void DVPToolStripMenuItem_Click(object sender, EventArgs e)
+        private void bAdd_Click(object sender, EventArgs e)
+        {
+            string s = label11.Text;
+            FormsAndDS.forProdaza f4 = new FormsAndDS.forProdaza(s, _drawshcaf.pointforStoimost, _drawshcaf.countStenka, _drawshcaf.countZadnya,_drawshcaf.countYashik,_drawshcaf.countVeshalka);
+            
+            f4.ShowDialog();
+        }
+
+        private void DVPToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             ChooseMaterialToolStripMenuItem.Text = "ДВП";
             _drawshcaf.pointforStoimost = 2;
             pictureBox1.Refresh();
+
         }
 
        
