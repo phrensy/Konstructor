@@ -63,8 +63,6 @@ D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forZakupka.
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csproj.ResolveComReference.cache
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.Otchet.resources
 D:\Kurs\Konstructor\Konstructor\obj\x86\Debug\Konstructor.FormsAndDS.forSvyazKP.resources
-<<<<<<< HEAD
-=======
 G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\Konstructor.exe.config
 G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\Konstructor.exe
 G:\университет\2 курс\ООП\Konstructor\Konstructor\bin\Debug\Konstructor.pdb
@@ -96,4 +94,3 @@ G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debu
 G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.csproj.GenerateResource.Cache
 G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.exe
 G:\университет\2 курс\ООП\Konstructor\Konstructor\obj\x86\Debug\Konstructor.pdb
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73

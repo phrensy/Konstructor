@@ -17,6 +17,7 @@ namespace Konstructor.FormsAndDS
 {
     public partial class TovarNak : Form
     {
+        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;Integrated Security=True;Connect Timeout=30";
         public TovarNak()
         {
             InitializeComponent();
@@ -31,7 +32,7 @@ namespace Konstructor.FormsAndDS
                 PdfWriter.GetInstance(doc, new FileStream(@saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.ReadWrite));
                 doc.Open();
 
-                BaseFont bf = BaseFont.CreateFont(@"d:\721032.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+                BaseFont bf = BaseFont.CreateFont(Environment.CurrentDirectory.ToString()+"\\721032.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
 
 
                 iTextSharp.text.Phrase j = new Phrase("Организация 'Наша фирма'",
@@ -224,10 +225,6 @@ namespace Konstructor.FormsAndDS
             int sum=0;
             string mater = "";
 
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
-
             string queryString = "SELECT Material FROM Komplect WHERE Name=N'" + comboBox2.Text + "'";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -270,10 +267,6 @@ namespace Konstructor.FormsAndDS
         {
             int cena = 0;
             string mater = "";
-
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
 
             string queryString = "SELECT Material FROM Komplect WHERE Name=N'" + comboBox2.Text + "'";
             using (SqlConnection connection = new SqlConnection(connectionString))

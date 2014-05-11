@@ -24,9 +24,7 @@ namespace Konstructor.FormsAndDS
         List<int> idKompl = new List<int>();
         public int idshcafa;
 
-        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
+        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;Integrated Security=True;Connect Timeout=30";
 
         public forProdaza(String s, int mater, int countS, int countZ, int countY, int countV)
         {

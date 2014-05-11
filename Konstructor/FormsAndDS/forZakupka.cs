@@ -21,9 +21,7 @@ namespace Konstructor.FormsAndDS
         List<string> namePost;
         int idshcafa;
 
-        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
+        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;Integrated Security=True;Connect Timeout=30";
 
         public forZakupka(List<string> mdf, List<string> dsp, List<string> dvp, List<string> vesh, List<int> idKompl, int idSH)
         {
@@ -194,13 +192,7 @@ namespace Konstructor.FormsAndDS
 
         public void ListIdPost(int idKompl)
         {
-<<<<<<< HEAD
-            string queryString = "";
-
-            queryString = "SELECT IdPost FROM SvyazKP WHERE idKomplect='" + idKompl + "'";
-=======
             string queryString = "SELECT IdPost FROM SvyazKP WHERE idKomplect='" + idKompl + "'";
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

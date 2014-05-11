@@ -13,9 +13,7 @@ namespace Konstructor
     public partial class DB : Form
     {
         int nPage=0;
-        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
+        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;Integrated Security=True;Connect Timeout=30";
         public DB()
         {
             InitializeComponent();

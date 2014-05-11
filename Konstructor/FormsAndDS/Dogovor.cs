@@ -18,6 +18,7 @@ namespace Konstructor.FormsAndDS
     public partial class Dogovor : Form
     {
         double predopl = 0.0;
+        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;Integrated Security=True;Connect Timeout=30";
         public Dogovor()
         {
             InitializeComponent();
@@ -62,7 +63,7 @@ namespace Konstructor.FormsAndDS
                 PdfWriter.GetInstance(doc, new FileStream(@saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.ReadWrite));
                 doc.Open();
 
-                BaseFont bf = BaseFont.CreateFont(@"d:\721032.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+                BaseFont bf = BaseFont.CreateFont(Environment.CurrentDirectory.ToString() + "\\721032.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
 
                 Random r = new Random();
                 iTextSharp.text.Phrase ph1 = new Phrase("Договор продажи шкафа №" + r.Next(1, 20),
@@ -344,9 +345,6 @@ odt.AddElement("6.5 Настоящий Договор составлен в дв
             string fio = "";
             string name = "";
             string otch = "";
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
 
             string queryString = "SELECT F,I,O FROM Client WHERE F=N'" + comboBox2.Text + "'";
 
@@ -386,9 +384,6 @@ odt.AddElement("6.5 Настоящий Договор составлен в дв
         {
             float cena = 0;
             string itog;
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
 
             string queryString = "SELECT Price FROM Shcaf WHERE Name=N'" + comboBox1.Text + "'";
 

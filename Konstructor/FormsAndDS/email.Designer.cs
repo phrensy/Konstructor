@@ -47,11 +47,9 @@
             this.postavshikTableAdapter = new Konstructor.KBD_DataSetTableAdapters.PostavshikTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-<<<<<<< HEAD
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-=======
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kBD_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
@@ -59,13 +57,12 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 32);
+            this.label1.Size = new System.Drawing.Size(562, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выберите документ и укажите почту \r\nдля отправления";
             // 
@@ -99,11 +96,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(194, 148);
             this.textBox2.Name = "textBox2";
-<<<<<<< HEAD
-            this.textBox2.Size = new System.Drawing.Size(115, 20);
-=======
             this.textBox2.Size = new System.Drawing.Size(165, 20);
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
@@ -111,11 +104,7 @@
             this.textBox3.Location = new System.Drawing.Point(194, 174);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-<<<<<<< HEAD
-            this.textBox3.Size = new System.Drawing.Size(115, 50);
-=======
             this.textBox3.Size = new System.Drawing.Size(165, 50);
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
             this.textBox3.TabIndex = 6;
             // 
             // button1
@@ -125,11 +114,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.button1.Location = new System.Drawing.Point(32, 230);
-=======
-            this.button1.Location = new System.Drawing.Point(130, 230);
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
+            this.button1.Location = new System.Drawing.Point(12, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 32);
             this.button1.TabIndex = 7;
@@ -160,26 +145,16 @@
             "Поставщики"});
             this.comboBox1.Location = new System.Drawing.Point(194, 61);
             this.comboBox1.Name = "comboBox1";
-<<<<<<< HEAD
-            this.comboBox1.Size = new System.Drawing.Size(115, 21);
-=======
             this.comboBox1.Size = new System.Drawing.Size(165, 21);
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
             this.comboBox1.TabIndex = 10;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-<<<<<<< HEAD
-            this.comboBox2.Location = new System.Drawing.Point(194, 88);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(115, 21);
-=======
             this.comboBox2.Location = new System.Drawing.Point(159, 88);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(200, 21);
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
             this.comboBox2.TabIndex = 11;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -214,19 +189,16 @@
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(12, 113);
             this.label2.Name = "label2";
-<<<<<<< HEAD
-            this.label2.Size = new System.Drawing.Size(297, 32);
-=======
             this.label2.Size = new System.Drawing.Size(347, 32);
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
             this.label2.TabIndex = 12;
             this.label2.Text = "Инфо:";
             // 
             // textBox1
             // 
-<<<<<<< HEAD
-            this.textBox1.Location = new System.Drawing.Point(15, 89);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(15, 88);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(115, 20);
             this.textBox1.TabIndex = 13;
             // 
@@ -237,46 +209,45 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(194, 230);
+            this.button2.Location = new System.Drawing.Point(194, 301);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 32);
+            this.button2.Size = new System.Drawing.Size(158, 32);
             this.button2.TabIndex = 14;
+            this.button2.Text = "Прикрепить файл";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
-            this.label6.Location = new System.Drawing.Point(315, 113);
+            this.label6.Location = new System.Drawing.Point(12, 234);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(202, 77);
+            this.label6.Size = new System.Drawing.Size(168, 49);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Инфо:";
+            this.label6.Text = "Список прикрепленных файлов";
             // 
-=======
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(15, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(115, 20);
-            this.textBox1.TabIndex = 13;
+            // textBox4
             // 
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
+            this.textBox4.Location = new System.Drawing.Point(194, 233);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox4.Size = new System.Drawing.Size(165, 50);
+            this.textBox4.TabIndex = 16;
+            // 
             // email
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(529, 274);
+            this.ClientSize = new System.Drawing.Size(378, 345);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
-=======
-            this.ClientSize = new System.Drawing.Size(371, 274);
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox2);
@@ -322,10 +293,8 @@
         private KBD_DataSetTableAdapters.PostavshikTableAdapter postavshikTableAdapter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-<<<<<<< HEAD
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
-=======
->>>>>>> 404954a7a597636b0c2ce1150877fcaeed269e73
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

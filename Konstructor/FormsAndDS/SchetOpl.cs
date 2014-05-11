@@ -17,6 +17,7 @@ namespace Konstructor.FormsAndDS
 {
     public partial class SchetOpl : Form
     {
+        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;Integrated Security=True;Connect Timeout=30";
         public SchetOpl()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace Konstructor.FormsAndDS
                 PdfWriter.GetInstance(doc, new FileStream(@saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.ReadWrite));
                 doc.Open();
 
-                BaseFont bf = BaseFont.CreateFont(@"d:\721032.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+                BaseFont bf = BaseFont.CreateFont(Environment.CurrentDirectory.ToString() + "\\721032.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
 
                 iTextSharp.text.Phrase j = new Phrase("Продавец: Наша фирма" +
                     "\n" + "Адрес: Ульяновск, ул. Северный Венец, д 32" +
@@ -201,9 +202,6 @@ namespace Konstructor.FormsAndDS
         public void zapros()
         {
             int id = 0;
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
 
             string queryString = "SELECT Id FROM Client WHERE Adress=N'" + comboBox2.Text + "'";
 
@@ -239,9 +237,6 @@ namespace Konstructor.FormsAndDS
             string fio = "";
             string name = "";
             string otch = "";
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
 
             string queryString = "SELECT F,I,O FROM Client WHERE Adress=N'" + comboBox2.Text + "'";
 
@@ -281,9 +276,6 @@ namespace Konstructor.FormsAndDS
         {
             float cena = 0;
             string itog;
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
 
             string queryString = "SELECT Price FROM Shcaf WHERE Name=N'" + comboBox1.Text + "'";
 

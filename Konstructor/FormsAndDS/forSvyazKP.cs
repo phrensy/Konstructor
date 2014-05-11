@@ -12,9 +12,8 @@ namespace Konstructor.FormsAndDS
 {
     public partial class forSvyazKP : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\KURS\BD\KBD.MDF;
-                                    Integrated Security=True;
-                                     Connect Timeout=30";
+        string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Kurs\BD\KBD.mdf;Integrated Security=True;Connect Timeout=30";
+
         public forSvyazKP()
         {
             InitializeComponent();
